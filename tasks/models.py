@@ -7,7 +7,7 @@ class Task(models.Model):
     description = models.TextField(blank=True, null=True)
     date_added = models.DateTimeField(auto_now_add=True)
     date_completed = models.DateTimeField(auto_now=True)
-    completed = models.BooleanField(blank=True) # null=True, default=True
+    completed = models.BooleanField(blank=True, null=True) # null=True, default=True
     
 def __str__(self):
     '''Return a string representation of the model.'''
