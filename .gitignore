@@ -5,7 +5,7 @@
 __pycache__
 db.sqlite3
 media
-twinkle_todo/settings.py
+.settings.py
 
 # Backup files
 *.bak
