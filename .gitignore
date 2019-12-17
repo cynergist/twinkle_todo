@@ -3,9 +3,12 @@
 *.pot
 *.pyc
 __pycache__
-db.sqlite3
-media
-.settings.py
+media/*
+static/*
+local_settings.py
+
+# Sqlite databases
+*.sqlite3
 
 # Backup files
 *.bak
@@ -42,3 +45,10 @@ coverage.xml
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+
+# Sublime
+*.sublime-workspace
+
+# Temporary files
+
+*~
