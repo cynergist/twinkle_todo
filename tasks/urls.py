@@ -14,5 +14,5 @@ urlpatterns = [
     # Page that shows all tasks
     path('tasks/', views.tasks, name='tasks'),
     # Detail page for a single task
-    path('tasks/<int:task_id>/', views.tasks, name='task'),
+    path('tasks/<int:task_id>/', views.task, name='task'),
 ]

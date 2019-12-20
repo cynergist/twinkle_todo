@@ -10,6 +10,15 @@ def tasks(request):
     tasks = Task.objects.order_by('date_added')
     context = {'tasks': tasks}
     return render(request, 'tasks/tasks.html', context)
+# A context is a dict in which the keys are names we'll use in the template to access data.
+
+def task(request, task_id):
+    '''Show a single task and all its entries'''
+    task = Task.objects.get(id=task_id)
+    entries = task.entry_set.order_by('-date_added')
+    context = {'task': task, 'entries': entries}
+    return render(request, 'tasks/task.html', context)
+
 
 def about(request):
     '''The about page for Twinkle Todo'''
