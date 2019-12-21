@@ -19,7 +19,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
-
+# Secret key
+with open('./twinkle_todo/secrets.py') as f:
+    SECRET_KEY = f.read().strip()
+    
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
