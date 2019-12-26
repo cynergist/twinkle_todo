@@ -37,6 +37,9 @@ INSTALLED_APPS = [
 
     # REST framework
     'rest_framework',
+
+    # Cross-Origin Resource Sharing (CORS)
+    'corsheaders',
     
     # Default django apps.
     'django.contrib.admin',
@@ -48,6 +51,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware', # added 12/25/19
+    'django.middleware.common.CommonMiddleware', # added 12/25/19
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -56,6 +61,12 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:3000',
+    'http://localhost:8000',
+    'http://localhost:8080',
+)
 
 ROOT_URLCONF = 'twinkle_todo.urls'
 
