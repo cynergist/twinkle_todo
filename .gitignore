@@ -8,6 +8,16 @@ static/*
 local_settings.py
 secrets.py
 
+# React
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+*.tsbuildinfo
+node_modules
+bower_componets
+
 # Sqlite databases
 *.sqlite3
 
