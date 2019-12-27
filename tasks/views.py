@@ -4,10 +4,12 @@ from .models import Task
 from .serializers import TaskSerializer
 
 class ListTask(generics.ListCreateAPIView):
+    '''Lists all tasks'''
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
 
 class DetailTask(generics.RetrieveUpdateDestroyAPIView):
+    '''Provides detail view of a single task object'''
     queryset = Task.objects.all()
     serializer_class = TaskSerializer
 
