@@ -13,24 +13,25 @@ Course as a helpful resource. Below are additional resources you may find helpfu
 [Django Documentation: Deployment Checklist - How not to use SECRET_KEY in production](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) <br />
 
 ## Instructions to set up the environment<br />
-First, create your virtual environment: <br />
-- For Mac, I've used the following commands, typed in the terminal:
+To create your virtual environment: <br />
+
+- For Mac, I've used the following commands, typed in the terminal:<br />
 `$ mkdir Dev` <br />
 `$ cd Dev`<br />
 `$ virtualenv`<br />
-- This should run virtualenv without errors.
+- This should run virtualenv without errors.<br />
 `$ virtualenv -p python3 .`<br />
-- This runs virtualenv with interpreter /usr/local/bin/python3
-- Also installs setuptools, pip, wheel...done.
+- Runs virtualenv with interpreter /usr/local/bin/python3 <br />
+- Also installs setuptools, pip, wheel...done. <br />
 `$ source bin/activate`<br />
-- Use this command to activate your virtualenv each time for Python & Django
+- Use this command to activate your virtualenv each time for Python & Django <br />
 `(Dev) $ pip install django==3.0`<br />
 `(Dev) $ pip install djangorestframework==3.11.0`<br />
 `(Dev) $ pip install django-cors-headers==3.2.0`<br />
-- If you are unsure if your virtualenv matches, check with `pip freeze`:
-`(Dev) $ pip freeze`<br />
+- If you are unsure if your virtualenv matches, check with `pip freeze`:<br />
 
 ```
+(Dev) $ pip freeze
 asgiref==3.2.3
 Django==3.0
 django-cors-headers==3.2.0
@@ -38,6 +39,6 @@ pytz==2019.3
 sqlparse==0.3.0
 ```
 <br />
-- In another window, to install `create-react-app` globally:
+- In another window, install `create-react-app` globally:<br />
 `$ npm install -g create-react-app`<br />
-- Now you can run this app locally.
+- Now you can run Twinkle To-Do locally.
