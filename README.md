@@ -38,7 +38,6 @@ django-cors-headers==3.2.0
 pytz==2019.3
 sqlparse==0.3.0
 ```
-<br />
 - In another window, install `create-react-app` globally:<br />
 `$ npm install -g create-react-app`<br />
 - Now you can run Twinkle To-Do locally.
