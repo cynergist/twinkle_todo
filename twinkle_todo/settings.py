@@ -48,6 +48,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # My added django apps
+    'ddtrace.contrib.django',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +69,7 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
     'http://localhost:8000',
     'http://localhost:8080',
+    'http://localhost:8001'
 )
 
 ROOT_URLCONF = 'twinkle_todo.urls'
