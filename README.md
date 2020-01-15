@@ -38,6 +38,10 @@ django-cors-headers==3.2.0
 pytz==2019.3
 sqlparse==0.3.0
 ```
+`$ python3 manage.py runserver`<br />
+- Navigate to [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)<br />
 - In another window, install `create-react-app` globally:<br />
 `$ npm install -g create-react-app`<br />
 - Now you can run Twinkle To-Do locally.
+`$ npm start` <br />
+- Navigate to [http://localhost:3000/](http://localhost:3000/) <br />
